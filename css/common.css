@@ -43,6 +43,9 @@ body {
   line-height: 1.65;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  /* wrap Korean at word boundaries, not mid-word */
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 /* Subtle grain overlay */
