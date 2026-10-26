@@ -1,0 +1,25 @@
+# Allow-list: only the public website is tracked.
+# Everything else in this folder (company decks, partner PDFs, design files,
+# work notes, server code) must never reach this public repository.
+/*
+!/.gitignore
+!/.nojekyll
+!/CNAME
+!/index.html
+!/tech.html
+!/solution.html
+!/about.html
+!/contact.html
+!/favicon.ico
+!/favicon.svg
+!/apple-touch-icon.png
+!/css/
+!/js/
+!/assets/
+
+# unused source logos
+/assets/img/logo.png
+/assets/img/wstory_logo.svg
+/assets/img/wstory_logo_nav.svg
+
+.DS_Store

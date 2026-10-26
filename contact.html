@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문의하기 — WSTORY AI &amp; IoT</title>
+  <meta name="description" content="혁신을 위한 연결, 지금 시작하세요. WSTORY AI & IoT 기술 솔루션에 대한 궁금증을 해결해 드립니다. 전문가가 직접 답변해 드립니다.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <header class="gnav" id="gnav">
+    <div class="gnav__inner">
+      <a class="gnav__logo" href="index.html">
+        <img class="gnav__logo-img" src="assets/img/wstory_logo_white.svg" alt="WSTORY AI &amp; IoT 로고">
+      </a>
+      <nav class="gnav__menu" id="gnavMenu">
+        <a href="index.html">홈</a>
+        <a href="tech.html">기술</a>
+        <a href="solution.html">솔루션</a>
+        <a href="about.html">회사 소개</a>
+        <a href="contact.html" class="active">문의하기</a>
+      </nav>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <a class="gnav__cta" href="contact.html">시작하기 <span aria-hidden="true">→</span></a>
+        <button class="gnav__toggle" id="gnavToggle" aria-label="메뉴 열기">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="contact-hero">
+    <div class="contact-hero__inner">
+      <span class="kicker reveal">Connect With Us</span>
+      <h1 class="contact-hero__title reveal reveal-d1">혁신을 위한 연결,<br><em>지금 시작하세요</em></h1>
+      <p class="lead reveal reveal-d2" style="margin:0 auto;">
+        WSTORY AI &amp; IoT 기술 솔루션에 대한 궁금증을 해결해 드립니다.
+        전문가가 직접 답변해 드립니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Contact body ===== -->
+  <section class="contact-body">
+    <!-- Info column -->
+    <div class="contact-info">
+      <div class="cinfo reveal">
+        <div class="label">Contact Info</div>
+        <h3>WSTORY 기술본부</h3>
+        <p>솔루션 도입 및 기술 파트너십 전담</p>
+      </div>
+      <div class="contact-side reveal reveal-d1">
+        <img src="assets/img/contact-control-room.jpg" alt="">
+        <span class="caption">WSTORY HQ — Gyeongsan</span>
+      </div>
+      <div class="cinfo reveal reveal-d2">
+        <div class="label">Office Address</div>
+        <h3>찾아오시는 길</h3>
+        <p>경북 경산시 대학로 316, 벤처창업관 201호</p>
+      </div>
+      <div class="cinfo reveal reveal-d3">
+        <div class="label">Official Email</div>
+        <h3>이메일 문의</h3>
+        <p><a href="mailto:admin@wstory.kr">admin@wstory.kr</a></p>
+      </div>
+    </div>
+
+    <!-- Form column -->
+    <!-- data-endpoint: Telegram relay URL (see server/telegram-relay/README.md). Empty = form shows the email fallback. -->
+    <form class="cform reveal reveal-d1" id="contactForm" data-endpoint="" novalidate>
+      <div class="cform__head">
+        <span class="kicker">Contact Form</span>
+        <h2>시스템 문의 폼</h2>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="name">성함 <span class="req">*</span></label>
+          <input type="text" id="name" name="name" placeholder="홍길동" required>
+        </div>
+        <div class="field">
+          <label for="org">소속</label>
+          <input type="text" id="org" name="org" placeholder="회사 / 기관명">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="email">이메일 주소 <span class="req">*</span></label>
+        <input type="email" id="email" name="email" placeholder="example@wstory.kr" required>
+      </div>
+
+      <div class="field">
+        <label for="subject">문의 유형</label>
+        <select id="subject" name="subject">
+          <option value="solution">솔루션 도입 문의</option>
+          <option value="tech">기술 컨설팅</option>
+          <option value="partnership">파트너십 제안</option>
+          <option value="etc">기타 문의</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="message">문의 내용 <span class="req">*</span></label>
+        <textarea id="message" name="message" placeholder="프로젝트 개요, 현장 환경, 문의 사항을 자세히 적어주세요." required></textarea>
+      </div>
+
+      <!-- honeypot: hidden from people, bots tend to fill it -->
+      <div class="field field--hp" aria-hidden="true">
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+      </div>
+
+      <button type="submit" class="btn btn--primary">문의 보내기 <span class="btn-arrow">→</span></button>
+      <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+      <p class="cform__note">접수된 문의는 영업일 기준 1~2일 내 답변됩니다.</p>
+    </form>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <img class="footer__logo" src="assets/img/wstory_logo_white.svg" alt="WSTORY AI &amp; IoT 로고" height="40">
+          <p class="footer__tagline">딥러닝 인프라부터 산업용 IoT까지, 미래 철도 안전의 새로운 표준을 설계합니다.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Company</h4>
+            <a href="index.html">홈</a>
+            <a href="about.html">회사 소개</a>
+            <a href="contact.html">문의하기</a>
+          </div>
+          <div class="footer__col">
+            <h4>Technology</h4>
+            <a href="tech.html">기술</a>
+            <a href="solution.html">솔루션</a>
+          </div>
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <a href="mailto:admin@wstory.kr">admin@wstory.kr</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2024 WSTORY AI &amp; IoT. All rights reserved.</span>
+        <a href="#">개인정보처리방침</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

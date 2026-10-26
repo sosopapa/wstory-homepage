@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>솔루션 — WSTORY AI &amp; IoT</title>
+  <meta name="description" content="산업 현장의 미래를 연결하다. WSTORY는 AI와 IoT를 융합하여 철도 시스템의 정밀 진단부터 산업용 에너지 관리까지, 가동 중단 없는 고도의 정밀 제어 솔루션을 제공합니다.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/solution.css">
+</head>
+<body>
+
+  <header class="gnav" id="gnav">
+    <div class="gnav__inner">
+      <a class="gnav__logo" href="index.html">
+        <img class="gnav__logo-img" src="assets/img/wstory_logo_white.svg" alt="WSTORY AI &amp; IoT 로고">
+      </a>
+      <nav class="gnav__menu" id="gnavMenu">
+        <a href="index.html">홈</a>
+        <a href="tech.html">기술</a>
+        <a href="solution.html" class="active">솔루션</a>
+        <a href="about.html">회사 소개</a>
+        <a href="contact.html">문의하기</a>
+      </nav>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <a class="gnav__cta" href="contact.html">시작하기 <span aria-hidden="true">→</span></a>
+        <button class="gnav__toggle" id="gnavToggle" aria-label="메뉴 열기">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="sol-hero">
+    <div class="sol-hero__inner">
+      <span class="kicker reveal">Enterprise AI Solutions</span>
+      <h1 class="sol-hero__title reveal reveal-d1">산업 현장의 미래를<br><em>연결하다</em></h1>
+      <p class="lead reveal reveal-d2">
+        WSTORY는 AI와 IoT를 융합하여 철도 시스템의 정밀 진단부터 산업용 에너지 관리까지,
+        가동 중단 없는 고도의 정밀 제어 솔루션을 제공합니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Flagship project ===== -->
+  <div class="flagship reveal">
+    <div class="flagship__visual">
+      <span class="flagship__label">Flagship Project</span>
+      <img src="assets/img/solution-daegu-monorail.jpg" alt="대구 도시철도 3호선 모노레일 운전석에서 바라본 고가 궤도">
+      <div class="flagship__insets">
+        <figure class="flagship__inset">
+          <img src="assets/img/solution-daegu-detect.jpg" alt="차량 카메라 영상에서 AI가 애자 이상을 감지해 표시한 화면">
+          <figcaption>AI 감지 · 애자</figcaption>
+        </figure>
+        <figure class="flagship__inset flagship__inset--wide">
+          <img src="assets/img/solution-daegu-loopcable.jpg" alt="궤도 면과 양쪽 루프케이블을 AI가 구분해 표시한 분석 화면">
+          <figcaption>AI 감지 · 루프케이블</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="flagship__body">
+      <span class="kicker">Flagship Project</span>
+      <h2 class="flagship__title">대구 도시철도 3호선<br>모노레일 자동 진단 지능 시스템</h2>
+      <div class="flagship__subtitle">Adaptive AI Inspection System</div>
+      <p class="flagship__desc">
+        루프 케이블 및 애자 결함 탐지를 위한 AI 기반 실시간 모니터링 시스템.
+        지능형 비전 알고리즘을 통한 예지 보전 체계 구축.
+      </p>
+      <div class="impact">
+        <div class="impact__cell">
+          <div class="label">탐지 방식</div>
+          <div class="value">자동 감지</div>
+        </div>
+        <div class="impact__cell">
+          <div class="label">운영</div>
+          <div class="value">상시 모니터링</div>
+        </div>
+        <div class="impact__cell">
+          <div class="label">분석 속도</div>
+          <div class="value">실시간</div>
+        </div>
+        <div class="impact__cell">
+          <div class="label">점검 업무</div>
+          <div class="value">자동화</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Industrial boiler IoT ===== -->
+  <section class="boiler" id="boiler">
+    <div class="section-head reveal">
+      <div>
+        <span class="kicker">Industrial Boiler IoT</span>
+        <h2 class="h2">산업용 보일러<br><em>IoT 통합 관제 시스템</em></h2>
+        <p class="lead">
+          보일러 설비의 PLC와 직접 연동되는 데이터 수집 보드로 압력·온도·연료 효율을 실시간으로
+          수집하고, 클라우드 기반 관제 화면에서 설비 상태를 한눈에 확인합니다.
+        </p>
+      </div>
+      <span class="boiler__status">운영 중</span>
+    </div>
+
+    <div class="boiler__features">
+      <div class="bfeat reveal">
+        <div class="bfeat__num">01</div>
+        <h3>PLC 직접 연동 데이터 수집</h3>
+        <p>Modbus, EtherCAT 등 산업용 프로토콜을 지원하는 자체 개발 수집 보드로 기존 설비를 교체 없이 연결합니다.</p>
+      </div>
+      <div class="bfeat reveal reveal-d1">
+        <div class="bfeat__num">02</div>
+        <h3>실시간 원격 모니터링</h3>
+        <p>현장에 가지 않아도 압력, 온도, 운전 상태를 실시간으로 확인하고 여러 설비를 한 화면에서 관리합니다.</p>
+      </div>
+      <div class="bfeat reveal reveal-d2">
+        <div class="bfeat__num">03</div>
+        <h3>이상 징후 조기 감지</h3>
+        <p>운전 데이터의 변화를 지속적으로 분석해 이상 징후를 조기에 감지하고 설비 사고와 가동 중단을 예방합니다.</p>
+      </div>
+      <div class="bfeat reveal reveal-d3">
+        <div class="bfeat__num">04</div>
+        <h3>에너지 효율 최적화</h3>
+        <p>연료 사용량과 효율 추이를 분석해 낭비 요인을 찾아내고 에너지 비용 절감을 지원합니다.</p>
+      </div>
+    </div>
+
+    <ol class="bflow reveal" aria-label="시스템 구성">
+      <li><span class="bflow__step">Field</span><strong>보일러 · PLC</strong><small>현장 설비</small></li>
+      <li><span class="bflow__step">Edge</span><strong>데이터 수집 보드</strong><small>자체 설계 하드웨어</small></li>
+      <li><span class="bflow__step">Cloud</span><strong>AWS 클라우드</strong><small>저장 · 분석</small></li>
+      <li><span class="bflow__step">Monitor</span><strong>통합 관제 화면</strong><small>웹 대시보드</small></li>
+    </ol>
+
+    <div class="livecard reveal">
+      <div class="livecard__bar">
+        <div class="livecard__dots" aria-hidden="true"><span></span><span></span><span></span></div>
+        <span class="livecard__title">LIVE FEED : BOILER_01</span>
+        <span class="livecard__live">Live</span>
+      </div>
+      <div class="livecard__grid">
+        <div class="livecard__cell">
+          <div class="label">Steam Pressure</div>
+          <div class="value"><em>정상</em> 범위</div>
+          <canvas data-spark="8.0,8.3,8.1,8.4,8.2,8.1,8.2" data-color="#00d0f0"></canvas>
+        </div>
+        <div class="livecard__cell">
+          <div class="label">Steam Temp</div>
+          <div class="value"><em>정상</em> 범위</div>
+          <canvas data-spark="170,173,171,174,172,171,172" data-color="#5db4ff"></canvas>
+        </div>
+        <div class="livecard__cell">
+          <div class="label">Fuel Efficiency</div>
+          <div class="value"><em>최적</em> 운전</div>
+          <canvas data-spark="90.8,91.2,91.0,91.6,91.3,91.5,91.4" data-color="#7ef0ff"></canvas>
+        </div>
+        <div class="livecard__cell">
+          <div class="label">Status</div>
+          <div class="value"><em>NORMAL</em></div>
+          <canvas data-spark="1,1,1,1,1,1,1" data-color="#00d0f0"></canvas>
+        </div>
+      </div>
+    </div>
+    <p class="boiler__note">* 관제 화면은 이해를 돕기 위한 예시입니다.</p>
+  </section>
+
+  <!-- ===== Edge computing ===== -->
+  <section class="edge">
+    <div class="reveal">
+      <span class="kicker">Solutions Impact</span>
+      <h2 class="edge__title">엣지 컴퓨팅 기반<br>AI 분석</h2>
+      <p class="edge__desc">
+        데이터 센터에 의존하지 않는 실시간 엣지 디바이스 분석으로 통신 부하를 최소화하고
+        즉각적인 대응을 보장합니다.
+      </p>
+      <div class="edge__stack">
+        <span class="chip">Custom NPU</span>
+        <span class="chip">IoT Mesh</span>
+        <span class="chip">Edge Inference</span>
+      </div>
+    </div>
+    <div class="edge__panel reveal reveal-d2" aria-hidden="true">
+      <div class="ring ring1"></div>
+      <div class="ring ring2"></div>
+      <div class="ring ring3"></div>
+      <div class="core"><span>NPU CORE</span></div>
+      <div class="edge__list">
+        <div class="item">
+          <div class="dot">01</div>
+          <div>
+            <h4>온디바이스 추론</h4>
+            <p>네트워크 지연 없이 현장에서 즉시 판단. 클라우드 장애에도 가동이 유지됩니다.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="dot">02</div>
+          <div>
+            <h4>메시 네트워크</h4>
+            <p>자가 복구형 IoT 메시로 광역 현장을 하나의 센싱 공간으로 연결합니다.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="dot">03</div>
+          <div>
+            <h4>통합 관제 인터페이스</h4>
+            <p>모든 설비 상태를 단일 대시보드에서 실시간으로 확인하고 제어합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta">
+    <div class="cta__inner reveal">
+      <span class="kicker" style="justify-content:center;">Get In Touch</span>
+      <h2 class="h2">귀사의 현장에도<br><em>WSTORY 솔루션을</em></h2>
+      <p>프로젝트 환경에 맞는 최적의 구축 방안을 제안해 드립니다.</p>
+      <div class="cta__actions">
+        <a class="btn btn--primary" href="contact.html">프로젝트 문의 <span class="btn-arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <img class="footer__logo" src="assets/img/wstory_logo_white.svg" alt="WSTORY AI &amp; IoT 로고" height="40">
+          <p class="footer__tagline">딥러닝 인프라부터 산업용 IoT까지, 미래 철도 안전의 새로운 표준을 설계합니다.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Company</h4>
+            <a href="index.html">홈</a>
+            <a href="about.html">회사 소개</a>
+            <a href="contact.html">문의하기</a>
+          </div>
+          <div class="footer__col">
+            <h4>Technology</h4>
+            <a href="tech.html">기술</a>
+            <a href="solution.html">솔루션</a>
+          </div>
+          <div class="footer__col">
+            <h4>Contact</h4>
+            <a href="mailto:admin@wstory.kr">admin@wstory.kr</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2024 WSTORY AI &amp; IoT. All rights reserved.</span>
+        <a href="#">개인정보처리방침</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/sparkline.js"></script>
+</body>
+</html>
